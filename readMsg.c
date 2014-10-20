@@ -18,10 +18,9 @@ int main(int argc, char **argv) {
     get_width(fp);
     get_height(fp);
     if(read_color_depth(fp)) { 
-      //Everything checks out, look for the message now
       int length = get_msg_length(fp);
      
-      printf("\nThe secret message is: \n");
+      printf("\nHoly secret message batman! We cracked the code: \n");
       decode_message(length, fp);
 
       fclose(fp);
