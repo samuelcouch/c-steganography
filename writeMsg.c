@@ -9,8 +9,8 @@ void encode_length(FILE *, FILE *, int);
 void encode_message(FILE *, FILE *, int, char *, int, int);
 
 int main(int argc, char **argv) {
-  if(argc < 4) {
-    printf("Program requires 3 parameters to work properly.\nAborting\n.");
+  if(argc < 3) {
+    printf("Program requires 2 parameters to work properly; the message within \" \" and the PPM file you want to encode the message in.\nAborting\n.");
     return 1;
   }
 
@@ -30,12 +30,12 @@ int main(int argc, char **argv) {
 
     if(message_fits(message_length, w, h)) {
       if(read_color_depth(fp)) {
-      	FILE *fp_t = fopen(argv[3],"w");
+      	FILE *fp_t = fopen("out.ppm","w");
       	int i = count_new_lines(fp);  
       	copy_header(fp, i, fp_t);
         encode_length(fp, fp_t, (message_length - 8) / 8);
       	encode_message(fp, fp_t, (message_length - 8), myMessage, w, h);
-      	printf("\nEncoding Process Complete.\n");
+      	printf("Encoding Process Complete. Take a look at out.ppm\n");
       	
       	fclose(fp);
       	fclose(fp_t);

@@ -7,4 +7,4 @@ writeMsg: stego.c writeMsg.c
 	$(CC) -o writeMsg stego.c writeMsg.c
 
 clean:
-	rm -f readMsg writeMsg
+	rm -f readMsg writeMsg out.ppm
