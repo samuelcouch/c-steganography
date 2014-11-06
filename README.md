@@ -1,7 +1,7 @@
 Steganography in C
 ====
 
-Steganography is the practce of hiding one thing (in this case, a message) within another thing (in this case, a PPM image).
+Steganography is the practce of hiding one thing (in this case, a message) within another thing (in this case, a PPM file).
 
 ## How to run
 1. Clone this repository
@@ -13,4 +13,5 @@ Steganography is the practce of hiding one thing (in this case, a message) withi
 1. `./readMsg out.ppm` 
 
 ## Demo
-![Awesome demo](/img/screencast.gif)
+**(Give it a click for full size screencast demo)**
+![Awesome demo](https://raw.githubusercontent.com/samuelcouch/c-steganography/master/img/screencast.gif)
