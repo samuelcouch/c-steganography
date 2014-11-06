@@ -8,7 +8,8 @@ Steganography is the practce of hiding one thing (in this case, a message) withi
 1. `cd c-steganography`
 1. `make`
 1. `./writeMsg "[secret message]" test-file.ppm` 
-  * Remember to escape special characters with `\`, out.ppm will be the modified file
+  * Remember to escape special characters with `\`
+  * out.ppm will be the modified file
 1. `./readMsg out.ppm` 
 
 ## Demo
